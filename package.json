@@ -1,0 +1,27 @@
+{
+  "name": "@solana/eslint-config-solana",
+  "version": "0.0.0-development",
+  "description": "ESLint rules to be shared across all Solana Labs projects",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./react": "./react.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "solana",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Solana Maintainers <maintainers@solana.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solana-labs/eslint-config-solana/issues"
+  },
+  "homepage": "https://github.com/solana-labs/eslint-config-solana",
+  "peerDependencies": {
+    "eslint": "^8.27.0"
+  }
+}
