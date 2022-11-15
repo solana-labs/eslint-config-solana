@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/solana-labs/eslint-config-solana",
   "peerDependencies": {
-    "eslint": "^8.27.0"
+    "eslint": "^8.27.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
   }
 }
