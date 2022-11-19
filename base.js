@@ -4,6 +4,8 @@ module.exports = {
     "shared-node-browser": true,
   },
   ignorePatterns: ["dist/**", "lib/**"],
+  parser: "@typescript-eslint/parser",
+  plugins: ["@typescript-eslint"],
   parserOptions: {
     sourceType: "module",
   },
