@@ -7,6 +7,9 @@
     ".": "./index.js",
     "./react": "./react.js"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "eslint",
     "eslintconfig",
