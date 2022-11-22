@@ -1,8 +1,7 @@
 const base = require("./base.js");
 module.exports = {
   ...base,
-  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  plugins: [...base.plugins, "sort-keys-fix"],
+  plugins: [...base.plugins],
   overrides: [
     {
       files: ["**/__tests__/*.ts"],
@@ -38,15 +37,4 @@ module.exports = {
       },
     },
   ],
-  rules: {
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        argsIgnorePattern: "^_",
-        destructuredArrayIgnorePattern: "^_",
-      },
-    ],
-    "no-unused-vars": "off",
-    "sort-keys-fix/sort-keys-fix": "error",
-  },
 };
