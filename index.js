@@ -4,6 +4,7 @@ module.exports = {
   extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
   plugins: [...base.plugins, "sort-keys-fix"],
   rules: {
+    ...base.rules,
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
@@ -12,6 +13,5 @@ module.exports = {
       },
     ],
     "no-unused-vars": "off",
-    "sort-keys-fix/sort-keys-fix": "error",
   },
 };
