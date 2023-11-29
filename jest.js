@@ -5,7 +5,11 @@ module.exports = {
   overrides: [
     {
       files: ["**/__tests__/*.ts"],
-      extends: ["plugin:jest/recommended", "plugin:jest/style"],
+      extends: [
+        ...base.extends,
+        "plugin:jest/recommended",
+        "plugin:jest/style",
+      ],
       plugins: ["jest"],
       rules: {
         "jest/consistent-test-it": "error",

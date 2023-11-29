@@ -1,7 +1,11 @@
 const base = require("./base.js");
 module.exports = {
   ...base,
-  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  extends: [
+    ...base.extends,
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+  ],
   plugins: [...base.plugins, "sort-keys-fix"],
   rules: {
     ...base.rules,
