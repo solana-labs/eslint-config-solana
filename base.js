@@ -5,15 +5,14 @@ module.exports = {
   },
   ignorePatterns: ["dist/**", "lib/**"],
   parser: "@typescript-eslint/parser",
-  plugins: [
-    "@typescript-eslint",
-    'simple-import-sort',
-  ],
+  plugins: ["@typescript-eslint", "simple-import-sort", "typescript-sort-keys"],
   parserOptions: {
     sourceType: "module",
   },
   rules: {
+    "@typescript-eslint/sort-type-constituents": "error",
     "simple-import-sort/imports": "error",
     "sort-keys-fix/sort-keys-fix": "error",
-  }
+    "typescript-sort-keys/interface": "error",
+  },
 };
