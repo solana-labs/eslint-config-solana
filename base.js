@@ -12,6 +12,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
+    "@typescript-eslint/no-floating-promises": "error",
     // See https://stackoverflow.com/questions/43353087/are-there-performance-concerns-with-return-await/70979225#70979225
     "@typescript-eslint/return-await": ["error", "always"],
     "@typescript-eslint/require-await": "error",
